@@ -21,9 +21,6 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
-$app->run();
-
-
 $dbopts = parse_url(getenv('DATABASE_URL'));
 $app->register(new Csanquer\Silex\PdoServiceProvider\Provider\PDOServiceProvider('pdo'),
                array(
@@ -52,3 +49,10 @@ $app->get('/db/', function() use($app) {
     'names' => $names
   ));
 });
+
+
+
+
+$app->run();
+
+

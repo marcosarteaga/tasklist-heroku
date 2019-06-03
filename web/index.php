@@ -17,7 +17,7 @@ echo"<input type='submit' value='Insertar' name='botonInsertar'>";
 echo "</form>";
 if (isset($_POST['botonInsertar'])) {
     $nuevaTarea1=$_POST['tareaNueva'];
-    $sentencia = $pdo->prepare("INSERT INTO tareas (tareas) VALUES (:tarea)");
+    $sentencia = $pdo->prepare("INSERT INTO tareas (name) VALUES (:tarea)");
     $sentencia->bindParam(':tarea', $tarea);
     $tarea = $nuevaTarea1;
     $sentencia->execute();

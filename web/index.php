@@ -21,6 +21,7 @@ echo "&nbsp";
 echo"<label>Añadir Tarea</label>";
 echo "<input type='text' style=' width: 20% ' class='form-control' name='tareaNueva'>";
 echo "&nbsp";
+echo "<br>";
 echo"<input type='submit' class='btn btn-success' value='Añadir' name='botonInsertar'>";	
 echo "</form>";
 if (isset($_POST['botonInsertar'])) {
@@ -38,6 +39,7 @@ while ($row = $stmt->fetch()) {
     echo $row['name'];
     echo "&nbsp";
     echo"<input type='button' class='btn btn-danger' value='Eliminar' name='botonEliminar' onclick=location.href='/?id=".$row['id']."'         >";
+    echo "<br>";
     echo "</li>";
 }
 echo "</ol>";

@@ -19,7 +19,7 @@ echo "<h1>Lista de Tareas</h1>";
 echo"<form method='POST' action='/'>";
 echo "&nbsp";
 echo"<label>Añadir Tarea</label>";
-echo "<input type='text' style=' width: 30% ' class='form-control' name='tareaNueva'>";
+echo "<input type='text' style=' width: 20% ' class='form-control' name='tareaNueva'>";
 echo "&nbsp";
 echo"<input type='submit' class='btn btn-success' value='Añadir' name='botonInsertar'>";	
 echo "</form>";

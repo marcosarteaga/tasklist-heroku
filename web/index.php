@@ -27,7 +27,7 @@ echo"<ul>";
 echo"<form method='POST' action='/'>";
 while ($row = $stmt->fetch()) {
 	echo "<li>";
-    echo $row['tareas'];
+    echo $row['name'];
     echo"<input type='button' value='Eliminar' name='botonEliminar' onclick=location.href='/?id=".$row['id']."'         >";
     echo "</li>";
 }

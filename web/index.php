@@ -9,8 +9,9 @@ $pdo = new PDO("pgsql:" . sprintf(
     ltrim($db["path"], "/")
 ));
 $stmt = $pdo->query("SELECT * FROM tareas");
-echo "<h1>Task List</h1>";
+echo "<h1>Lista de Tareas</h1>";
 echo"<form method='POST' action='/'>";
+echo "&nbsp";
 echo"<label>Nueva Tarea</label>";
 echo "<input type='text' name='tareaNueva'>";
 echo "&nbsp";

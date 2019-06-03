@@ -13,6 +13,7 @@ echo "<h1>Task List</h1>";
 echo"<form method='POST' action='/'>";
 echo"<label>Nueva Tarea</label>";
 echo "<input type='text' name='tareaNueva'>";
+echo "&nbsp";
 echo"<input type='submit' value='Insertar' name='botonInsertar'>";	
 echo "</form>";
 if (isset($_POST['botonInsertar'])) {
@@ -28,6 +29,7 @@ echo"<form method='POST' action='/'>";
 while ($row = $stmt->fetch()) {
 	echo "<li>";
     echo $row['name'];
+    echo "&nbsp";
     echo"<input type='button' value='Eliminar' name='botonEliminar' onclick=location.href='/?id=".$row['id']."'         >";
     echo "</li>";
 }

@@ -38,7 +38,6 @@ while ($row = $stmt->fetch()) {
 	echo "<li>";
     echo $row['name'];
     echo "&nbsp";
-    echo "<br>";
     echo"<input type='button' class='btn btn-danger' value='Eliminar' name='botonEliminar' onclick=location.href='/?id=".$row['id']."'         >";
     echo "<br>";
     echo "</li>";
